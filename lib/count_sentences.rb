@@ -15,6 +15,8 @@ self.end_with?("!")
   end
 
   def count_sentences
-
+array=self.split(/ \W[!"#$%&'()*+.;<=>?@\^]/)
+array.compact.length
+binding.pry
   end
 end
