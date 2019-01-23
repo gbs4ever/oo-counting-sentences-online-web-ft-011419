@@ -15,7 +15,7 @@ self.end_with?("!")
   end
 
   def count_sentences
-self.split(/\.|\?|\!/).compact.length
+self.split(/\.|\?|\!/).delete_if {|w| w.size < 2}.compact.length
 #array.compact.length
 
   end
